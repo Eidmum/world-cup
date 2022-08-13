@@ -96,6 +96,8 @@ body{
     background-color: #161616;
     border-radius: 10px;
     margin-right: 100px;
+    text-align: center;
+   
 }
 .menu-button{
     width: 252px;
@@ -104,7 +106,7 @@ body{
     border-radius: 10px;
     font-size: 20px;
     margin-top: 30px;
-    margin-left: 30px;
+  
     
     
 }
@@ -197,12 +199,13 @@ hr{
         background-color: white;
         align-items: center;
         margin-right: 0;
+        text-align: center;
     }
     .news{
         grid-template-columns: repeat(1,1fr);
     }
     footer{
-        width: 375px;
+        
         height: 650px;
         margin-top: 3500px;
     }
@@ -242,6 +245,7 @@ hr{
         display: flex;
         background-color: white;
         margin-bottom: 30px;
+        justify-content: space-evenly;
         
         
     }
