@@ -1,0 +1,266 @@
+/* common styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    max-width: 1600px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+}
+/* top part */
+.top-container{
+    background-color: #161616;
+    border-radius: 30px;
+    display: flex;
+    Height:646px;
+    margin-top: 50px;
+
+
+}
+.heading{
+    font-size: 70px;
+    font-weight: 700;
+   
+    color: #FFFFFF;
+}
+.half-width{
+    width: 50%;
+    margin-left: 106px;
+}
+.description{
+    size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.link-button{
+    text-decoration: none;
+
+}
+.half-width p{
+    margin-bottom: 80px;
+}
+.half-width a{
+    color: white;
+    
+
+    padding: 16px 25px;
+    background-color: #DD0000;
+    border-radius: 5px;
+    transition: padding .5s linear .1s;
+}
+.half-width a:hover{
+    color: black;
+
+    padding: 16px 30px;
+    background-color: cyan;
+    border-radius: 5px;
+}
+.half-width img{
+    Width:581px;
+    Height:613px;
+    margin-top: 33px;
+}
+/* news section */
+.news-section{
+    margin-top: 130px;
+    display: flex;
+    
+}
+.news{
+    flex-grow: 1;
+    Width:312px;
+    Height:362px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    
+}
+.single-news{
+    box-shadow: 0 0 10px gray;
+    border-radius: 10px;
+}
+.match-image{
+    display: flex;
+    justify-content: center;
+    margin-top:70px;
+}
+.match-image h1{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.news-image img{
+    width: 100%;
+}
+.menu{
+    height: 312px;
+    width: 312px;
+    background-color: #161616;
+    border-radius: 10px;
+    margin-right: 100px;
+}
+.menu-button{
+    width: 252px;
+    height: 64px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+    
+    
+}
+.match{
+    background-color: gray;
+}
+.news-description{
+    padding: 20px;
+    text-align: center;
+}
+.news-description h1{
+    font-size: 18px;
+}
+.news-button{
+    width: 100px;
+    height: 32px;
+    background-color: white;
+    border-radius: 5px;
+}
+.news-footer i{
+    margin-right: 10px;
+}
+#footer-1{
+    margin-right: 30px;
+}
+#tab-button{
+    display: none;
+    
+}
+/* footer area */
+footer{
+    margin-top: 800px;
+    text-align: center;
+    background-color:  #161616;
+    color: #FFFFFF;
+    height: 444px;
+}
+footer h1{
+    padding-top: 144px;
+    font-size: 40px;
+    
+}
+hr{
+    width: 60%;
+    
+}
+.footer-menu{
+    margin-top: 50px;
+}
+.footer-menu a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+
+}
+.social-icons{
+    font-size: 30px;
+    margin-top: 50px;
+}
+.social-icons a{
+    text-decoration: none;
+    color: white;
+}
+.social-icons i{
+    margin-left: 20px;
+}
+/* media queries */
+@media screen and (max-width:688px) {
+    .top-container{
+        flex-direction: column;
+        text-align: center;
+        height: 750px;
+      
+    }
+    .heading{
+        font-size: 22px;
+    }
+    .banner-image img{
+        width: 100%;
+        height: 245px;
+    }
+    .news-section{
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .news{
+        width: 375px;
+    }
+    .menu{
+        background-color: white;
+        align-items: center;
+        margin-right: 0;
+    }
+    .news{
+        grid-template-columns: repeat(1,1fr);
+    }
+    footer{
+        width: 375px;
+        margin-top: 2700px;
+        height: 650px;
+    }
+    .footer-menu a{
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+@media only screen and (min-width:689px) and (max-width:992px){
+    .top-container{
+        height: 650px;
+    }
+    .heading{
+        font-size: 40px;
+        font-weight: 700;
+       
+        color: #FFFFFF;
+    }
+    .banner-image img{
+        width: 100%;
+    }
+     
+    .news-section{
+        flex-direction: column;
+        margin-top: 70px;
+     
+        
+    }
+    .menu{
+        width: 100%;
+        height: auto;
+        display: flex;
+        background-color: white;
+        margin-bottom: 30px;
+        
+        
+    }
+    .menu-button{
+        width: 230px;
+        height: 64px;
+    }
+    .news{
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+    }
+    #tab-button{
+        display: block;
+        color: white;
+        background: #DD0000;
+        border-radius: 5px;
+        padding: 12px 29px;
+        margin: 1400px auto;
+        margin-bottom: 0;
+    }
+    footer{
+        margin-top: 0px;
+    }
+}
