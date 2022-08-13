@@ -218,6 +218,7 @@ hr{
 @media only screen and (min-width:689px) and (max-width:992px){
     .top-container{
         height: 650px;
+        width: 100%;
     }
     .heading{
         font-size: 40px;
@@ -264,6 +265,7 @@ hr{
     }
     footer{
         margin-top: 0px;
+       
        
     }
 }
